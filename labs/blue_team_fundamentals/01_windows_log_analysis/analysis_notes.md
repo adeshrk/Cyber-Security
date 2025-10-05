@@ -8,10 +8,10 @@
 
 ## Observations
 - Repeated failed logins from one IP suggest brute-force attempts.
-- Multiple user accounts targeted in a short time frame.
+- Single user account targeted in a short time frame.
 - Visualization clearly shows spikes corresponding to the attack.
 
-## Next Steps (optional)
+## Next Steps
 - Enrichment: GeoIP or hostname mapping for suspicious IPs
 - Correlation: Compare with network logs or alerting platform
 - Automation: Integrate detection logic into a SOC pipeline

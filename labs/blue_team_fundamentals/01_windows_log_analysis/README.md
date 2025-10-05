@@ -17,16 +17,17 @@ Focus is on **identification** of suspicious authentication patterns, not remedi
 
 ## Key Findings
 - Rapid, repeated failed login attempts from a single source IP.
-- Multiple user accounts targeted in a short timeframe.
-- No successful logins occurred during the same period from the suspicious IP.
+- Single user account targeted in a short timeframe.
+- No successful logins occurred during the same period from the suspicious IP due to wrong password.
 - Pattern strongly indicates a brute-force attack attempt.
 
 ## Screenshots
 | Visualization | Description |
 |---------------|-------------|
 | ![Failed Logins Over Time](screenshots/failed_logins_over_time.png) | Time-series chart showing spike in failed logins |
-| ![Top Source IPs](screenshots/top_source_ips.png) | Bar chart of IP addresses with most failed logins |
-| ![User/IP Table](screenshots/user_ip_table.png) | Table showing which usernames were targeted by each IP |
+| ![Log](screenshots/4625_event_log_description.png) | 4625 - Failed login - log description |
+| ![Login events](screenshots/login_events.png) | Login events |
+| ![IP](screenshots/ip_with_failed_login_events_and_targeted_account.png) | Visualization of ip with failed login events and targeted account |
 
 ## Artifacts
 - `event_summary.md` — chronological summary of identified events
@@ -42,6 +43,7 @@ Focus is on **identification** of suspicious authentication patterns, not remedi
 ## MITRE ATT&CK Mapping
 - **T1110 – Brute Force**
 - **T1078 – Valid Accounts (if successful logins are observed)**
+
 
 ---
 
